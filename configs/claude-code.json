@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "ZKFinance-MCP-IA": {
+      "type": "http",
+      "url": "https://api.finance.zkapps.online/mcp",
+      "headers": { "Authorization": "Bearer ${ZKFINANCE_MCP_TOKEN}" }
+    }
+  }
+}

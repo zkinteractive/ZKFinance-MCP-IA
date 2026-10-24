@@ -1,0 +1,14 @@
+{
+  "name": "zkfinance-mcp-ia",
+  "version": "1.1.0",
+  "description": "ZKFinance-MCP-IA — ligação ao ambiente de teste ZK Finance",
+  "mcpServers": {
+    "ZKFinance-MCP-IA": {
+      "httpUrl": "https://api.finance.zkapps.online/mcp",
+      "headers": { "Authorization": "Bearer ${ZKFINANCE_MCP_TOKEN}" }
+    }
+  },
+  "settings": [
+    { "name": "Chave MCP do ZK Finance", "description": "Crie uma chave em Definições > Integrações e IA no ambiente de teste. Não use a palavra-passe.", "envVar": "ZKFINANCE_MCP_TOKEN", "sensitive": true }
+  ]
+}
