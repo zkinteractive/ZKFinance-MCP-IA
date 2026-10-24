@@ -6,6 +6,8 @@ Ligação remota MCP ao ZK Finance. O assistente interpreta o pedido; o Laravel 
 
 Este repositório contém configurações e instruções públicas do conector. O backend da aplicação e os dados dos clientes continuam nos repositórios/servidores privados. Um link GitHub permite instalar extensões em clientes que suportam esse mecanismo; não dá a uma IA autorização para instalar integrações em qualquer aplicação ou ignorar consentimentos.
 
+O conteúdo desta versão está na branch `codex/mcp-ai-access`, pendente de integração em `main`.
+
 ## Preparação da conta
 
 1. O administrador do pacote activa **Acesso à IA via MCP** no ZK Finance.
@@ -36,7 +38,7 @@ Em Settings → Connectors → Add custom connector, introduzir o endereço MCP 
 ## Gemini CLI — extensão instalável pelo GitHub
 
 ```sh
-gemini extensions install https://github.com/zkinteractive/ZKFinance-MCP-IA
+gemini extensions install https://github.com/zkinteractive/ZKFinance-MCP-IA --ref codex/mcp-ai-access
 ```
 
 O instalador do Gemini CLI pede uma **chave MCP do ZK Finance** no campo sensível, guardado no keychain quando suportado. Criar a chave nas Definições da aplicação, com apenas as permissões necessárias. Não a enviar ao modelo. A extensão configura o servidor HTTP e mantém as confirmações do cliente. O nome técnico da extensão é `zkfinance-mcp-ia`, conforme a regra de nomes em minúsculas do Gemini CLI; o servidor chama-se `ZKFinance-MCP-IA`.
